@@ -314,6 +314,14 @@ export { getIcon }
 
 .sidebar-nav {
   @apply flex-1 overflow-y-auto py-4;
+  /* Ocultar scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Ocultar scrollbar para Chrome, Safari y Opera */
+.sidebar-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .menu-item {
